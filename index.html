@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="cover">
+
+            <img id="cover" src="images/cover1.jpg">
+
+        </div>
+
+        <div class="details">
+
+            <span class="type">Now Playing</span>
+
+            <h1 id="title">Blinding Lights</h1>
+
+            <p id="album">
+                Music Player • 1 Song
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Controls -->
+
+    <section class="controls">
+
+        <button id="prev">
+            <i class="fa-solid fa-backward-step"></i>
+        </button>
+
+        <button id="play">
+            <i class="fa-solid fa-play"></i>
+        </button>
+
+        <button id="next">
+            <i class="fa-solid fa-forward-step"></i>
+        </button>
+
+    </section>
+
+
+
+    <!-- Progress -->
+
+    <section class="progress-box">
+
+        <span id="current">
+            0:00
+        </span>
+
+        <input
+            type="range"
+            id="progress"
+            min="0"
+            max="100"
+            value="0">
+
+        <span id="duration">
+            0:00
+        </span>
+
+    </section>
+
+
+
+    <!-- Volume -->
+
+    <section class="volume-box">
+
+        <i class="fa-solid fa-volume-high"></i>
+
+        <input
+            type="range"
+            id="volume"
+            min="0"
+            max="100"
+            value="100">
+
+    </section>
+
+
+
+
+    <!-- Playlist -->
+
+    <section class="playlist">
+
+        <div class="playlist-heading">
+
+            <h2>Songs</h2>
+
+        </div>
+
+
+        <div class="song active">
+
+            <img src="images/cover1.jpg">
+
+            <div>
+
+                <h3>Blinding Lights</h3>
+
+                <p>04:10</p>
+
+            </div>
+
+            <i class="fa-solid fa-play"></i>
+
+        </div>
+
+
+        <div class="song">
+
+            <img src="images/cover2.jpg">
+
+            <div>
+
+                <h3>Starboy</h3>
+
+                <p>03:50</p>
+
+            </div>
+
+            <i class="fa-solid fa-play"></i>
+
+        </div>
+
+
+        <div class="song">
+
+            <img src="images/cover3.jpg">
+
+            <div>
+
+                <h3>Save Your Tears</h3>
+
+                <p>03:42</p>
+
+            </div>
+
+            <i class="fa-solid fa-play"></i>
+
+        </div>
+
+    </section>
+
+
+</div>
+
+
+<audio id="audio"></audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
